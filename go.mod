@@ -1,6 +1,6 @@
 module github.com/IvanTime-Kai/train-ticket-proto
 
-go 1.26.0
+go 1.25
 
 require (
 	google.golang.org/grpc v1.79.2
