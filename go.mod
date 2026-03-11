@@ -1,4 +1,4 @@
-module github.com/leminhthai/train-ticket-proto
+module github.com/IvanTime-Kai/train-ticket-proto
 
 go 1.26.0
 
