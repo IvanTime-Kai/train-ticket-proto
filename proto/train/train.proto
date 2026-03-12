@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package train;
 
-option go_package = "github.com/leminhthai/train-ticket-proto/gen/proto/train";
+option go_package = "github.com/IvanTime-Kai/train-ticket-proto/gen/proto/train;train";
 
 message SeatInfo {
   string seat_id     = 1;

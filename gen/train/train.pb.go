@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v7.34.0
-// source: proto/train/train.proto
+// source: train/train.proto
 
 package train
 
@@ -33,7 +33,7 @@ type SeatInfo struct {
 
 func (x *SeatInfo) Reset() {
 	*x = SeatInfo{}
-	mi := &file_proto_train_train_proto_msgTypes[0]
+	mi := &file_train_train_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -45,7 +45,7 @@ func (x *SeatInfo) String() string {
 func (*SeatInfo) ProtoMessage() {}
 
 func (x *SeatInfo) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_train_train_proto_msgTypes[0]
+	mi := &file_train_train_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *SeatInfo) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SeatInfo.ProtoReflect.Descriptor instead.
 func (*SeatInfo) Descriptor() ([]byte, []int) {
-	return file_proto_train_train_proto_rawDescGZIP(), []int{0}
+	return file_train_train_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *SeatInfo) GetSeatId() string {
@@ -99,7 +99,7 @@ type ValidateSeatsRequest struct {
 
 func (x *ValidateSeatsRequest) Reset() {
 	*x = ValidateSeatsRequest{}
-	mi := &file_proto_train_train_proto_msgTypes[1]
+	mi := &file_train_train_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -111,7 +111,7 @@ func (x *ValidateSeatsRequest) String() string {
 func (*ValidateSeatsRequest) ProtoMessage() {}
 
 func (x *ValidateSeatsRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_train_train_proto_msgTypes[1]
+	mi := &file_train_train_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -124,7 +124,7 @@ func (x *ValidateSeatsRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ValidateSeatsRequest.ProtoReflect.Descriptor instead.
 func (*ValidateSeatsRequest) Descriptor() ([]byte, []int) {
-	return file_proto_train_train_proto_rawDescGZIP(), []int{1}
+	return file_train_train_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *ValidateSeatsRequest) GetTripId() string {
@@ -152,7 +152,7 @@ type ValidateSeatsResponse struct {
 
 func (x *ValidateSeatsResponse) Reset() {
 	*x = ValidateSeatsResponse{}
-	mi := &file_proto_train_train_proto_msgTypes[2]
+	mi := &file_train_train_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -164,7 +164,7 @@ func (x *ValidateSeatsResponse) String() string {
 func (*ValidateSeatsResponse) ProtoMessage() {}
 
 func (x *ValidateSeatsResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_train_train_proto_msgTypes[2]
+	mi := &file_train_train_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -177,7 +177,7 @@ func (x *ValidateSeatsResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ValidateSeatsResponse.ProtoReflect.Descriptor instead.
 func (*ValidateSeatsResponse) Descriptor() ([]byte, []int) {
-	return file_proto_train_train_proto_rawDescGZIP(), []int{2}
+	return file_train_train_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *ValidateSeatsResponse) GetValid() bool {
@@ -201,11 +201,11 @@ func (x *ValidateSeatsResponse) GetSeats() []*SeatInfo {
 	return nil
 }
 
-var File_proto_train_train_proto protoreflect.FileDescriptor
+var File_train_train_proto protoreflect.FileDescriptor
 
-const file_proto_train_train_proto_rawDesc = "" +
+const file_train_train_proto_rawDesc = "" +
 	"\n" +
-	"\x17proto/train/train.proto\x12\x05train\"p\n" +
+	"\x11train/train.proto\x12\x05train\"p\n" +
 	"\bSeatInfo\x12\x17\n" +
 	"\aseat_id\x18\x01 \x01(\tR\x06seatId\x12\x1f\n" +
 	"\vseat_number\x18\x02 \x01(\tR\n" +
@@ -220,27 +220,27 @@ const file_proto_train_train_proto_rawDesc = "" +
 	"\amessage\x18\x02 \x01(\tR\amessage\x12%\n" +
 	"\x05seats\x18\x03 \x03(\v2\x0f.train.SeatInfoR\x05seats2Z\n" +
 	"\fTrainService\x12J\n" +
-	"\rValidateSeats\x12\x1b.train.ValidateSeatsRequest\x1a\x1c.train.ValidateSeatsResponseB:Z8github.com/leminhthai/train-ticket-proto/gen/proto/trainb\x06proto3"
+	"\rValidateSeats\x12\x1b.train.ValidateSeatsRequest\x1a\x1c.train.ValidateSeatsResponseBBZ@github.com/IvanTime-Kai/train-ticket-proto/gen/proto/train;trainb\x06proto3"
 
 var (
-	file_proto_train_train_proto_rawDescOnce sync.Once
-	file_proto_train_train_proto_rawDescData []byte
+	file_train_train_proto_rawDescOnce sync.Once
+	file_train_train_proto_rawDescData []byte
 )
 
-func file_proto_train_train_proto_rawDescGZIP() []byte {
-	file_proto_train_train_proto_rawDescOnce.Do(func() {
-		file_proto_train_train_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_train_train_proto_rawDesc), len(file_proto_train_train_proto_rawDesc)))
+func file_train_train_proto_rawDescGZIP() []byte {
+	file_train_train_proto_rawDescOnce.Do(func() {
+		file_train_train_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_train_train_proto_rawDesc), len(file_train_train_proto_rawDesc)))
 	})
-	return file_proto_train_train_proto_rawDescData
+	return file_train_train_proto_rawDescData
 }
 
-var file_proto_train_train_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_proto_train_train_proto_goTypes = []any{
+var file_train_train_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_train_train_proto_goTypes = []any{
 	(*SeatInfo)(nil),              // 0: train.SeatInfo
 	(*ValidateSeatsRequest)(nil),  // 1: train.ValidateSeatsRequest
 	(*ValidateSeatsResponse)(nil), // 2: train.ValidateSeatsResponse
 }
-var file_proto_train_train_proto_depIdxs = []int32{
+var file_train_train_proto_depIdxs = []int32{
 	0, // 0: train.ValidateSeatsResponse.seats:type_name -> train.SeatInfo
 	1, // 1: train.TrainService.ValidateSeats:input_type -> train.ValidateSeatsRequest
 	2, // 2: train.TrainService.ValidateSeats:output_type -> train.ValidateSeatsResponse
@@ -251,26 +251,26 @@ var file_proto_train_train_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_proto_train_train_proto_init() }
-func file_proto_train_train_proto_init() {
-	if File_proto_train_train_proto != nil {
+func init() { file_train_train_proto_init() }
+func file_train_train_proto_init() {
+	if File_train_train_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_train_train_proto_rawDesc), len(file_proto_train_train_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_train_train_proto_rawDesc), len(file_train_train_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_proto_train_train_proto_goTypes,
-		DependencyIndexes: file_proto_train_train_proto_depIdxs,
-		MessageInfos:      file_proto_train_train_proto_msgTypes,
+		GoTypes:           file_train_train_proto_goTypes,
+		DependencyIndexes: file_train_train_proto_depIdxs,
+		MessageInfos:      file_train_train_proto_msgTypes,
 	}.Build()
-	File_proto_train_train_proto = out.File
-	file_proto_train_train_proto_goTypes = nil
-	file_proto_train_train_proto_depIdxs = nil
+	File_train_train_proto = out.File
+	file_train_train_proto_goTypes = nil
+	file_train_train_proto_depIdxs = nil
 }
